@@ -6,7 +6,7 @@ process.stdin.pipe(split()).pipe(
 	tr(
 		function write(buffer){
 			var s = buffer.toString();
-			var out = count % 2 === 0 ? s.toLowerCase() : s.toUpperCase();
+			var out = (count % 2 === 0) ? s.toLowerCase() : s.toUpperCase();
 			this.queue(out + '\n');
 			count++;
 		}

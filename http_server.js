@@ -1,7 +1,6 @@
 var http = require('http');
 var through = require('through');
 
-
 http.createServer(function(req, res){
 
 	if(req.method == "POST"){
@@ -18,6 +17,5 @@ http.createServer(function(req, res){
 	}else{
 		res.end();
 	}
-
 
 }).listen(process.argv[2]);

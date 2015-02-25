@@ -10,6 +10,5 @@ process.stdin.pipe(split()).pipe(
 			this.queue(out + '\n');
 			count++;
 		}
-	)).pipe(process.stdout);
-
-
+	)
+).pipe(process.stdout);
